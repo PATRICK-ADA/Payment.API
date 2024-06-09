@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{B5656CAC-5DC4-4835-AF85-548171F680C1}|PaymentService.API\\PaymentService.API.csproj|solutionrelative:paymentservice.api\\paymentservice.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5656CAC-5DC4-4835-AF85-548171F680C1}|PaymentService.API\\PaymentService.API.csproj|c:\\users\\hp\\downloads\\onedrive\\desktop\\chatapplication\\payment.api\\paymentservice.api\\paymentservice.api\\paymentservice.web\\extensions\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5656CAC-5DC4-4835-AF85-548171F680C1}|PaymentService.API\\PaymentService.API.csproj|solutionrelative:paymentservice.api\\paymentservice.web\\extensions\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B5656CAC-5DC4-4835-AF85-548171F680C1}|PaymentService.API\\PaymentService.API.csproj|c:\\users\\hp\\downloads\\onedrive\\desktop\\chatapplication\\payment.api\\paymentservice.api\\paymentservice.api\\paymentservice.web\\extensions\\serilogdbmigrationlogging.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B5656CAC-5DC4-4835-AF85-548171F680C1}|PaymentService.API\\PaymentService.API.csproj|solutionrelative:paymentservice.api\\paymentservice.web\\extensions\\serilogdbmigrationlogging.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5656CAC-5DC4-4835-AF85-548171F680C1}|PaymentService.API\\PaymentService.API.csproj|c:\\users\\hp\\downloads\\onedrive\\desktop\\chatapplication\\payment.api\\paymentservice.api\\paymentservice.api\\paymentservice.web\\extensions\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5656CAC-5DC4-4835-AF85-548171F680C1}|PaymentService.API\\PaymentService.API.csproj|solutionrelative:paymentservice.api\\paymentservice.web\\extensions\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B5656CAC-5DC4-4835-AF85-548171F680C1}|PaymentService.API\\PaymentService.API.csproj|c:\\users\\hp\\downloads\\onedrive\\desktop\\chatapplication\\payment.api\\paymentservice.api\\paymentservice.api\\paymentservice.core\\services\\invoiceconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,13 +34,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "SeriLogDbMigrationLogging.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Downloads\\OneDrive\\Desktop\\ChatApplication\\Payment.API\\PaymentService.API\\PaymentService.API\\PaymentService.Web\\Extensions\\SeriLogDbMigrationLogging.cs",
               "RelativeDocumentMoniker": "PaymentService.API\\PaymentService.Web\\Extensions\\SeriLogDbMigrationLogging.cs",
               "ToolTip": "C:\\Users\\hp\\Downloads\\OneDrive\\Desktop\\ChatApplication\\Payment.API\\PaymentService.API\\PaymentService.API\\PaymentService.Web\\Extensions\\SeriLogDbMigrationLogging.cs",
               "RelativeToolTip": "PaymentService.API\\PaymentService.Web\\Extensions\\SeriLogDbMigrationLogging.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAAAAgAAAA3AAAA",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAAAB0AAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-09T16:30:30.682Z",
               "EditorCaption": ""
@@ -53,7 +53,7 @@
               "RelativeDocumentMoniker": "PaymentService.API\\PaymentService.Web\\Program.cs",
               "ToolTip": "C:\\Users\\hp\\Downloads\\OneDrive\\Desktop\\ChatApplication\\Payment.API\\PaymentService.API\\PaymentService.API\\PaymentService.Web\\Program.cs",
               "RelativeToolTip": "PaymentService.API\\PaymentService.Web\\Program.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAACQAAAAoAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-09T01:04:24.412Z",
               "EditorCaption": ""
@@ -73,7 +73,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ServiceExtensions.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Downloads\\OneDrive\\Desktop\\ChatApplication\\Payment.API\\PaymentService.API\\PaymentService.API\\PaymentService.Web\\Extensions\\ServiceExtensions.cs",
               "RelativeDocumentMoniker": "PaymentService.API\\PaymentService.Web\\Extensions\\ServiceExtensions.cs",
