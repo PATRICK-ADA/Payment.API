@@ -1,6 +1,5 @@
 ﻿using Confluent.Kafka;
 using InvoiceService.API.InvoiceService.Domain.Entities;
-using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
 using PaymentService.API.PaymentService.Core.ApiResponse;
 using PaymentService.API.PaymentService.Domain.RequestDto;
@@ -44,22 +43,30 @@ namespace Services.Notification_Publisher
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
-            while (!stoppingToken.IsCancellationRequested)
+            try
             {
-                var consumeResult = _consumer.Consume(stoppingToken);
-
-                if (consumeResult != null)
+                while (!stoppingToken.IsCancellationRequested)
                 {
-                   
-                    var paymentResult = await ProcessPayment(consumeResult.Message.Value);
+                    var consumeResult = _consumer.Consume(stoppingToken);
 
-                    var jsonPaymentResult = JsonConvert.SerializeObject(paymentResult);
-                    await _producer.ProduceAsync("Payment-Topic", new Message<string, string> { Value = jsonPaymentResult });
+                    if (consumeResult != null)
+                    {
 
-                    Log.Information($"Published payment result: {jsonPaymentResult}");
+                        var paymentResult = await ProcessPayment(consumeResult.Message.Value);
+
+                        var jsonPaymentResult = JsonConvert.SerializeObject(paymentResult);
+                        await _producer.ProduceAsync("Payment-Topic", new Message<string, string> { Value = jsonPaymentResult });
+
+                        Log.Information($"Published payment result: {jsonPaymentResult}");
+                    }
                 }
             }
-        }
+                 catch (Exception ex)
+            {
+                 Log.Information($"{ex.Message}");
+            }
+             
+         }
         
         private async Task<PaymentResult> ProcessPayment(string message)
         {
@@ -82,7 +89,7 @@ namespace Services.Notification_Publisher
             request.AddJsonBody(new
             {
                 email = invoice.UserName,
-                amount = invoice.Amount * 100, // amount in kobo
+                amount = invoice.Amount * 100,
                 reference = Guid.NewGuid().ToString()
             });
 

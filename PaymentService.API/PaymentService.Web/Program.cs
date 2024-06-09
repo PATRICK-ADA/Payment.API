@@ -1,6 +1,5 @@
-using Serilog;
-using RoomService.Infrastructure.Data;
-using Microsoft.EntityFrameworkCore;
+
+using Extensions.NewSeriLog;
 using Notification.API.Notification.Web.Extensions;
 
 
@@ -12,22 +11,12 @@ public class Program
     {
 
         var builder = WebApplication.CreateBuilder(args);
-
-        builder.Host.UseSerilog((context, config) =>
-        {
-            config.Enrich.FromLogContext()
-                .WriteTo.Console()
-                .ReadFrom.Configuration(context.Configuration);
-
-        });
+       
+        builder.AddSerilog();
 
         builder.Services.AppServices(builder.Configuration);
         builder.Services.ConfigureKafka();
         builder.Services.AddSwaggerServices();
-
-
-
-        // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 
         var app = builder.Build();
 
@@ -45,7 +34,7 @@ public class Program
 
         app.UseAuthorization();
         app.MapControllers();
-        app.UseSerilogMigrationSetUpInfo();
+        app.UseSerilogDbMigrationLogging();
 
         app.Run();
     }

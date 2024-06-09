@@ -9,7 +9,6 @@ namespace BidService.API.BidService.Domain.Entities
         public List<string> Cars { get; set; } = null!;
         public decimal  AmountPaid { get; set; }    
 
-
     }
 
 

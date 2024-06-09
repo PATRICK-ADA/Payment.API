@@ -2,11 +2,11 @@
 using RoomService.Infrastructure.Data;
 using Serilog;
 
-namespace Notification.API.Notification.Web.Extensions
+namespace Extensions.NewSeriLog
 {
-    public static class SeriLogDefinition
+    public static class SeriLogDbMigrationLogging
     {
-        public static void UseSerilogMigrationSetUpInfo(this WebApplication app)
+        public static void UseSerilogDbMigrationLogging(this WebApplication app)
         {
 
             using (var scope = app.Services.CreateScope())

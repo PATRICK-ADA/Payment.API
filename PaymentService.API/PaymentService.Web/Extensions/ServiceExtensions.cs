@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 using Microsoft.OpenApi.Models;
 using Notification.API.Nofication.Core.Abstraction;
 using RoomService.Infrastructure.Data;
+using Serilog;
 using Services.Notification_Publisher;
 
 
@@ -17,11 +17,23 @@ namespace Notification.API.Notification.Web.Extensions
             return services;    
         }
 
-        public static IServiceCollection AppServices(this IServiceCollection services, IConfiguration configuration)
+        public static WebApplicationBuilder AddSerilog(this WebApplicationBuilder builder) 
         {
 
 
+            builder.Host.UseSerilog((context, config) =>
+            {
+                config.Enrich.FromLogContext()
+                    .WriteTo.Console()
+                    .ReadFrom.Configuration(context.Configuration);
 
+            });
+            return builder;
+
+        }
+
+        public static IServiceCollection AppServices(this IServiceCollection services, IConfiguration configuration)
+        {
             services.AddAuthentication();
             services.AddAuthorization();
             services.AddControllers();
