@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "ContainingType": "PaymentService.API.PaymentService.Web.Controllers.InitializePaymentController",
+    "Method": "InitializePayment",
+    "RelativePath": "api/InitializePayment/initialize-payment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "invoice",
+        "Type": "PaymentService.API.PaymentService.Domain.RequestDto.InvoiceDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

@@ -35,8 +35,4 @@
     <PackageReference Include="System.Composition.TypedParts" Version="6.0.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="PaymentService.Web\Controllers\" />
-  </ItemGroup>
-
 </Project>

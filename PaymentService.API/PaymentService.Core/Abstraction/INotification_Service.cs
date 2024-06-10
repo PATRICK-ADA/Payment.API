@@ -1,10 +1,10 @@
-﻿using BidService.API.BidService.Core.ApiResponse;
+﻿using API.BidService.Core.ApiResponse;
+using PaymentService.API.PaymentService.Domain.RequestDto;
 
 namespace Notification.API.Nofication.Core.Abstraction
 {
-    public interface INotification_Publisher
+    public interface IPaymentService
     {
-
-        Task<ApiResponse<object>> GetHighestBidderAsync();
+        Task<ApiResponse<object>> InitializePayment(InvoiceDto invoice);
     }
 }

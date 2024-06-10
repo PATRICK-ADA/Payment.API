@@ -39,7 +39,7 @@ namespace Notification.API.Notification.Web.Extensions
             services.AddAuthorization();
             services.AddControllers();
 
-            services.AddScoped<INotification_Publisher, Notification_Publisher>();
+            services.AddScoped<IPaymentService, Services.Notification_Publisher.PaymentService>();
 
             services.AddDbContext<AppDbContext>(options =>
             options.UseNpgsql(
