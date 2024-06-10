@@ -1,9 +1,6 @@
 ﻿using Confluent.Kafka;
 using InvoiceService.API.InvoiceService.Domain.Entities;
 using Newtonsoft.Json;
-using PaymentService.API.PaymentService.Core.ApiResponse;
-using PaymentService.API.PaymentService.Domain.RequestDto;
-using RestSharp;
 using RoomService.Infrastructure.Data;
 using Serilog;
 
@@ -53,12 +50,8 @@ namespace Services.Notification_Publisher
                     {
 
                        await ProcessPayment(consumeResult.Message.Value);
-                        
 
-                       // var jsonPaymentResult = JsonConvert.SerializeObject(paymentResult);
-                       // await _producer.ProduceAsync("Payment-Topic", new Message<string, string> { Value = jsonPaymentResult });
-
-                      //  Log.Information($"Published payment result: {jsonPaymentResult}");
+                       Log.Information($"Processed payment result successfully");
                     }
                 }
             }

@@ -1,4 +1,4 @@
-﻿namespace PaymentService.API.PaymentService.Domain.RequestDto
+﻿namespace PaymentService.API.PaymentService.Domain.Entities
 {
     public class PaymentResult
     {

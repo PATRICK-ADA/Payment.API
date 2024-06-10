@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Invoice.API.KafkaConsumerService;
+using Invoice.Core.Abstraction;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Notification.API.Nofication.Core.Abstraction;
 using RoomService.Infrastructure.Data;
@@ -40,6 +42,7 @@ namespace Notification.API.Notification.Web.Extensions
             services.AddControllers();
 
             services.AddScoped<IPaymentService, Services.Notification_Publisher.PaymentService>();
+            services.AddScoped<IKafKaPublisherService, KafkaPublisherService>();    
 
             services.AddDbContext<AppDbContext>(options =>
             options.UseNpgsql(

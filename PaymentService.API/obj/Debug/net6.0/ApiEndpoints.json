@@ -8,9 +8,25 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "invoice",
-        "Type": "PaymentService.API.PaymentService.Domain.RequestDto.InvoiceDto",
-        "IsRequired": true
+        "Name": "UserName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PaymentService.API.PaymentService.Web.Controllers.InitializePaymentController",
+    "Method": "VerifyPayment",
+    "RelativePath": "api/InitializePayment/verify-payment",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reference",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
