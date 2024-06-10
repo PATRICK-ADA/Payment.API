@@ -52,12 +52,13 @@ namespace Services.Notification_Publisher
                     if (consumeResult != null)
                     {
 
-                        var paymentResult = await ProcessPayment(consumeResult.Message.Value);
+                       await ProcessPayment(consumeResult.Message.Value);
+                        
 
-                        var jsonPaymentResult = JsonConvert.SerializeObject(paymentResult);
-                        await _producer.ProduceAsync("Payment-Topic", new Message<string, string> { Value = jsonPaymentResult });
+                       // var jsonPaymentResult = JsonConvert.SerializeObject(paymentResult);
+                       // await _producer.ProduceAsync("Payment-Topic", new Message<string, string> { Value = jsonPaymentResult });
 
-                        Log.Information($"Published payment result: {jsonPaymentResult}");
+                      //  Log.Information($"Published payment result: {jsonPaymentResult}");
                     }
                 }
             }
@@ -67,8 +68,8 @@ namespace Services.Notification_Publisher
             }
              
          }
-        
-        private async Task<PaymentResult> ProcessPayment(string paymentResult)
+
+        private async Task ProcessPayment(string paymentResult)
         {
 
             using var scope = _serviceScopeFactory.CreateScope();
@@ -77,45 +78,7 @@ namespace Services.Notification_Publisher
 
             var result = await context.Invoices.AddAsync(invoice);
             await context.SaveChangesAsync();
-            var client = new RestClient("https://api.paystack.co/transaction/initialize");
-
-            var request = new RestRequest();
-            request.Method = Method.Post; 
-
-            request.AddHeader("Authorization", $"Bearer {_config["Paystack:SecretKey"]}");
-            request.AddHeader("Content-Type", "application/json");
-
-            
-            request.AddJsonBody(new
-            {
-                email = invoice.UserName,
-                amount = invoice.Amount * 100,
-                reference = Guid.NewGuid().ToString()
-            });
-
-            var response = await client.ExecuteAsync<PaystackResponse>(request);
-            if (response.IsSuccessful)
-            {
-                return new PaymentResult
-                {
-                    UserName = invoice.UserName,
-                    Amount = invoice.Amount,
-                    Status = "Success",
-                    Reference = response.Data.data.reference
-                };
-            }
-            else
-            {
-                return new PaymentResult
-                {
-                    UserName = invoice.UserName,
-                    Amount = invoice.Amount,
-                    Status = "Failed",
-                    Reference = null
-                };
-            }
         }
-
         public override void Dispose()
         {
             _consumer?.Dispose();

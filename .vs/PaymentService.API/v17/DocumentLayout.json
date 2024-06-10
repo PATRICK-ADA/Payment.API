@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\hp\\Downloads\\OneDrive\\Desktop\\ChatApplication\\Payment.API\\PaymentService.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B5656CAC-5DC4-4835-AF85-548171F680C1}|PaymentService.API\\PaymentService.API.csproj|c:\\users\\hp\\downloads\\onedrive\\desktop\\chatapplication\\payment.api\\paymentservice.api\\paymentservice.api\\paymentservice.web\\controllers\\initializepaymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5656CAC-5DC4-4835-AF85-548171F680C1}|PaymentService.API\\PaymentService.API.csproj|solutionrelative:paymentservice.api\\paymentservice.web\\controllers\\initializepaymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B5656CAC-5DC4-4835-AF85-548171F680C1}|PaymentService.API\\PaymentService.API.csproj|c:\\users\\hp\\downloads\\onedrive\\desktop\\chatapplication\\payment.api\\paymentservice.api\\paymentservice.api\\paymentservice.core\\services\\invoiceconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5656CAC-5DC4-4835-AF85-548171F680C1}|PaymentService.API\\PaymentService.API.csproj|solutionrelative:paymentservice.api\\paymentservice.core\\services\\invoiceconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5656CAC-5DC4-4835-AF85-548171F680C1}|PaymentService.API\\PaymentService.API.csproj|c:\\users\\hp\\downloads\\onedrive\\desktop\\chatapplication\\payment.api\\paymentservice.api\\paymentservice.api\\paymentservice.domain\\entities\\bidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5656CAC-5DC4-4835-AF85-548171F680C1}|PaymentService.API\\PaymentService.API.csproj|solutionrelative:paymentservice.api\\paymentservice.domain\\entities\\bidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B5656CAC-5DC4-4835-AF85-548171F680C1}|PaymentService.API\\PaymentService.API.csproj|c:\\users\\hp\\downloads\\onedrive\\desktop\\chatapplication\\payment.api\\paymentservice.api\\paymentservice.api\\paymentservice.core\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B5656CAC-5DC4-4835-AF85-548171F680C1}|PaymentService.API\\PaymentService.API.csproj|solutionrelative:paymentservice.api\\paymentservice.core\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5656CAC-5DC4-4835-AF85-548171F680C1}|PaymentService.API\\PaymentService.API.csproj|c:\\users\\hp\\downloads\\onedrive\\desktop\\chatapplication\\payment.api\\paymentservice.api\\paymentservice.api\\paymentservice.web\\controllers\\initializepaymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5656CAC-5DC4-4835-AF85-548171F680C1}|PaymentService.API\\PaymentService.API.csproj|solutionrelative:paymentservice.api\\paymentservice.web\\controllers\\initializepaymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B5656CAC-5DC4-4835-AF85-548171F680C1}|PaymentService.API\\PaymentService.API.csproj|c:\\users\\hp\\downloads\\onedrive\\desktop\\chatapplication\\payment.api\\paymentservice.api\\paymentservice.api\\paymentservice.web\\extensions\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,10 +39,6 @@
       "RelativeMoniker": "D:0:0:{B5656CAC-5DC4-4835-AF85-548171F680C1}|PaymentService.API\\PaymentService.API.csproj|solutionrelative:paymentservice.api\\paymentservice.core\\abstraction\\ikafkapublisherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5656CAC-5DC4-4835-AF85-548171F680C1}|PaymentService.API\\PaymentService.API.csproj|c:\\users\\hp\\downloads\\onedrive\\desktop\\chatapplication\\payment.api\\paymentservice.api\\paymentservice.api\\paymentservice.core\\services\\invoiceconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5656CAC-5DC4-4835-AF85-548171F680C1}|PaymentService.API\\PaymentService.API.csproj|solutionrelative:paymentservice.api\\paymentservice.core\\services\\invoiceconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B5656CAC-5DC4-4835-AF85-548171F680C1}|PaymentService.API\\PaymentService.API.csproj|c:\\users\\hp\\downloads\\onedrive\\desktop\\chatapplication\\payment.api\\paymentservice.api\\paymentservice.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{B5656CAC-5DC4-4835-AF85-548171F680C1}|PaymentService.API\\PaymentService.API.csproj|solutionrelative:paymentservice.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
@@ -46,11 +50,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 6,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BidModel.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Downloads\\OneDrive\\Desktop\\ChatApplication\\Payment.API\\PaymentService.API\\PaymentService.API\\PaymentService.Domain\\Entities\\BidModel.cs",
+              "RelativeDocumentMoniker": "PaymentService.API\\PaymentService.Domain\\Entities\\BidModel.cs",
+              "ToolTip": "C:\\Users\\hp\\Downloads\\OneDrive\\Desktop\\ChatApplication\\Payment.API\\PaymentService.API\\PaymentService.API\\PaymentService.Domain\\Entities\\BidModel.cs",
+              "RelativeToolTip": "PaymentService.API\\PaymentService.Domain\\Entities\\BidModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T21:48:27.231Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -58,7 +75,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ServiceExtensions.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Downloads\\OneDrive\\Desktop\\ChatApplication\\Payment.API\\PaymentService.API\\PaymentService.API\\PaymentService.Web\\Extensions\\ServiceExtensions.cs",
               "RelativeDocumentMoniker": "PaymentService.API\\PaymentService.Web\\Extensions\\ServiceExtensions.cs",
@@ -71,20 +88,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PaymentService.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Downloads\\OneDrive\\Desktop\\ChatApplication\\Payment.API\\PaymentService.API\\PaymentService.API\\PaymentService.Core\\Services\\PaymentService.cs",
               "RelativeDocumentMoniker": "PaymentService.API\\PaymentService.Core\\Services\\PaymentService.cs",
               "ToolTip": "C:\\Users\\hp\\Downloads\\OneDrive\\Desktop\\ChatApplication\\Payment.API\\PaymentService.API\\PaymentService.API\\PaymentService.Core\\Services\\PaymentService.cs",
               "RelativeToolTip": "PaymentService.API\\PaymentService.Core\\Services\\PaymentService.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAACwAAABgAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAABsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-10T20:34:05.879Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\hp\\Downloads\\OneDrive\\Desktop\\ChatApplication\\Payment.API\\PaymentService.API\\PaymentService.API\\appsettings.json",
               "RelativeDocumentMoniker": "PaymentService.API\\appsettings.json",
@@ -97,7 +114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "InvoiceDto.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Downloads\\OneDrive\\Desktop\\ChatApplication\\Payment.API\\PaymentService.API\\PaymentService.API\\PaymentService.Domain\\RequestDto\\InvoiceDto.cs",
               "RelativeDocumentMoniker": "PaymentService.API\\PaymentService.Domain\\RequestDto\\InvoiceDto.cs",
@@ -110,7 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "IKafKaPublisherService.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Downloads\\OneDrive\\Desktop\\ChatApplication\\Payment.API\\PaymentService.API\\PaymentService.API\\PaymentService.Core\\Abstraction\\IKafKaPublisherService.cs",
               "RelativeDocumentMoniker": "PaymentService.API\\PaymentService.Core\\Abstraction\\IKafKaPublisherService.cs",
@@ -123,7 +140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "INotification_Service.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Downloads\\OneDrive\\Desktop\\ChatApplication\\Payment.API\\PaymentService.API\\PaymentService.API\\PaymentService.Core\\Abstraction\\INotification_Service.cs",
               "RelativeDocumentMoniker": "PaymentService.API\\PaymentService.Core\\Abstraction\\INotification_Service.cs",
@@ -136,20 +153,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "InitializePaymentController.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Downloads\\OneDrive\\Desktop\\ChatApplication\\Payment.API\\PaymentService.API\\PaymentService.API\\PaymentService.Web\\Controllers\\InitializePaymentController.cs",
               "RelativeDocumentMoniker": "PaymentService.API\\PaymentService.Web\\Controllers\\InitializePaymentController.cs",
               "ToolTip": "C:\\Users\\hp\\Downloads\\OneDrive\\Desktop\\ChatApplication\\Payment.API\\PaymentService.API\\PaymentService.API\\PaymentService.Web\\Controllers\\InitializePaymentController.cs",
               "RelativeToolTip": "PaymentService.API\\PaymentService.Web\\Controllers\\InitializePaymentController.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAASwBgAAAA3AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-10T20:10:51.648Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\hp\\Downloads\\OneDrive\\Desktop\\ChatApplication\\Payment.API\\PaymentService.API\\PaymentService.API\\Dockerfile",
               "RelativeDocumentMoniker": "PaymentService.API\\Dockerfile",
@@ -161,13 +178,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "InvoiceConsumer.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Downloads\\OneDrive\\Desktop\\ChatApplication\\Payment.API\\PaymentService.API\\PaymentService.API\\PaymentService.Core\\Services\\InvoiceConsumer.cs",
               "RelativeDocumentMoniker": "PaymentService.API\\PaymentService.Core\\Services\\InvoiceConsumer.cs",
               "ToolTip": "C:\\Users\\hp\\Downloads\\OneDrive\\Desktop\\ChatApplication\\Payment.API\\PaymentService.API\\PaymentService.API\\PaymentService.Core\\Services\\InvoiceConsumer.cs",
               "RelativeToolTip": "PaymentService.API\\PaymentService.Core\\Services\\InvoiceConsumer.cs",
-              "ViewState": "AQIAAEYAAAAAAAAAAAAAAGYAAAAnAAAA",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAADwAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-08T21:13:21.405Z",
               "EditorCaption": ""
