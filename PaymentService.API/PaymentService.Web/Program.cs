@@ -1,7 +1,5 @@
-
 using Extensions.NewSeriLog;
 using Notification.API.Notification.Web.Extensions;
-
 
 
 

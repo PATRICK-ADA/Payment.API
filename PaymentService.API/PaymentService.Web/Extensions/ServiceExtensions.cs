@@ -32,6 +32,7 @@ namespace Notification.API.Notification.Web.Extensions
 
         }
 
+       
         public static IServiceCollection AppServices(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddAuthentication();
@@ -62,6 +63,7 @@ namespace Notification.API.Notification.Web.Extensions
         }
 
 
+       
         public static IServiceCollection AddSwaggerServices(this IServiceCollection services)
         {
             services.AddEndpointsApiExplorer();

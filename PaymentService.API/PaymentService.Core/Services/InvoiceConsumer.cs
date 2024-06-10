@@ -68,12 +68,12 @@ namespace Services.Notification_Publisher
              
          }
         
-        private async Task<PaymentResult> ProcessPayment(string message)
+        private async Task<PaymentResult> ProcessPayment(string paymentResult)
         {
 
             using var scope = _serviceScopeFactory.CreateScope();
             var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-            var invoice = JsonConvert.DeserializeObject<InvoiceModel>(message);
+            var invoice = JsonConvert.DeserializeObject<InvoiceModel>(paymentResult);
 
             var result = await context.Invoices.AddAsync(invoice);
             await context.SaveChangesAsync();
